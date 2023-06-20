@@ -10,45 +10,64 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
     <link rel="stylesheet" href="css/mdb.dark.min.css" />
+    <link rel="stylesheet" href="css/safia.css" />
   </head>
   <body class="d-flex flex-column min-vh-100">
     <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand text-primary" href="">
+            LITH
+          </a>
+          <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+              <!--i class="fas fa-bars"></i-->
+            </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarColor02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="https://rblx.party">Roblox tools</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
       <div class="p-5 text-center bg-dark">
-        <h1 class="mb-3">FUx64</h1>
+        <h1 class="mt-4">FUx64</h1>
         <h4 class="mb-3">Roblox's noninvasive fps unlocker</h4>
         <a class="btn btn-secondary" data-mdb-toggle="modal" data-mdb-target="#dlModal" role="button">Download</a>
       </div>
     </header>
     <div class="modal fade" id="dlModal" tabindex="-1" aria-labelledby="dlModalLabel" aria-hidden="true">
       <div class="modal-dialog">
-        <div class="modal-content">
+        <div class="modal-content bg-dark">
           <div class="modal-header">
             <h5 class="modal-title" id="dlModalLabel"> FUx64 - Download </h5>
             <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body">You will be redirected to the latest releases page on github where you can download the executable. <br>
-            <p class="alert-warning" role="alert">This is the only safe place to download, never download from other sites.</p>
+          <div class="modal-body">You will be redirected to multiupload from where you can download the executable from a file host.<br>
+            <p class="alert-warning" role="alert">This link is the only safe place to download, never download from other sites.</p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-danger" data-mdb-dismiss="modal"> Close </button>
-            <a type="button" href="https://github.com/RblxParty/FUx64/releases" class="btn btn-primary"> Download now </a>
+            <button type="button" onclick="download()" class="btn btn-primary"> Download now </button>
           </div>
         </div>
       </div>
     </div>
     <div class="container text-center p-5">
-      <p>FUx64 is a fps unlocker for Roblox developed by nvrxstd. Imagine your favorite game not being limited to 60 frames how fluid would that be? FUx64 exposes an easy way to unlock frames with no risk of bans (read our github to learn more).</p>
-      <p class="note note-warning">
-        <strong>Note: </strong>This method uses Roblox's own settings to unlock the FPS, but as it is not an official and non-invasive way, you need to unlock it again with each Roblox update.
-      </p>
+      <p class="text-info">FUx64 is a fps unlocker for Roblox developed by nvrxstd. Imagine your favorite game not being limited to 60 frames how fluid would that be? FUx64 exposes an easy way to unlock frames with no risk of bans (read our gitlab to learn more).</p>
+      <p class="text-warning"><strong>Note: </strong>This method uses Roblox's own settings to unlock the FPS, but as it is not an official and non-invasive way, you need to unlock it again with each Roblox update.</p>
       <h3>Open Source</h3>
-      <p>FUx64 is fully open sourced! You can view the source code in the <a href="https://github.com/RblxParty/FUx64">official GitHub repository</a>. </p>
+      <p>FUx64 is fully open sourced! You can view the source code in the <a href="https://gitlab.com/LITHwin/FUx64">official GitLab repository</a>. </p>
     </div>
     <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
     <footer class="text-center text-lg-start footer mt-auto py-3 bg-dark">
   <div class="text-center p-3">Made with ❤️ by 
-    <a class="text-secondary" href="https://www.roblox.com/users/3383075693">nvrxstd</a>
-    <br><span>RblxParty © 2023</span>
+    <a class="text-danger" href="https://www.roblox.com/users/3383075693">nvrxstd</a>
+    <br><span><a class="text-primary" href="https://lith.win">LITH</a> © 2023</span>
   </div>
 </footer>
   </body>
